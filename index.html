@@ -8,7 +8,7 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Delius+Unicase:700|Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Delius+Unicase" rel="stylesheet">
 </head>
 <body>
 
@@ -29,15 +29,15 @@
   <main>
     <div class="banner relative push">
       <div class="embed embed-3by2">
-        <img class="embed-item" src="images/banner.jpg" alt="">
+        <picture>
+          <source media="(min-width: 60em)" srcset="images/banner-large.jpg">
+          <source media="(min-width: 25em)" srcset="images/banner-small.jpg">
+          <img class="embed-item" src="images/banner.jpg" alt="">
+        </picture>
       </div>
       <div class="banner-content absolute pin-tl island max-length">
         <p class="yotta"><strong>Snail is a common name that is applied most often to land snails, terrestrial pulmonate gastropod molluscs.</strong></p>
       </div>
-    </div>
-
-    <div class="ad-wrap push">
-      <iframe src="http://deelay.me/1000/https://assets.learn-the-web.algonquindesign.ca/web-dev-3/fastness-fixer-ad/index.html" class="ad"></iframe>
     </div>
 
     <div class="gutter-1-2 max-length">
@@ -46,7 +46,7 @@
     </div>
 
     <div class="embed embed-3by2 push">
-      <img class="embed-item" src="images/snai1.jpg" alt="">
+      <img class="embed-item" src="images/snail.jpg" alt="">
     </div>
 
     <div class="gutter-1-2 max-length">
@@ -64,12 +64,22 @@
     <div class="grid push">
       <div class="unit xs-1 m-1-2">
         <div class="embed embed-3by2">
-          <img class="embed-item" src="images/snail-2.jpg" alt="">
+          <picture>
+            <source media="(min-width: 60em)" srcset="images/snail-2-large.jpg">
+            <source media="(min-width: 38em)" srcset="images/snail-2-medium.jpg">
+            <source media="(min-width: 25em)" srcset="images/snail-2-small.jpg">
+            <img class="embed-item" src="images/snail-2.jpg" alt="">
+          </picture>
         </div>
       </div>
       <div class="unit xs-1 m-1-2">
         <div class="embed embed-3by2">
-          <img class="embed-item" src="images/snail-3.jpg" alt="">
+          <picture>
+            <source media="(min-width: 60em)" srcset="images/snail-3-large.jpg">
+            <source media="(min-width: 38em)" srcset="images/snail-3-medium.jpg">
+            <source media="(min-width: 25em)" srcset="images/snail-3-small.jpg">
+            <img class="embed-item" src="images/snail-3.jpg" alt="">
+          </picture>
         </div>
       </div>
     </div>
@@ -92,7 +102,5 @@
       </nav>
     </div>
   </footer>
-
-  <script src="http://deelay.me/1000/https://assets.learn-the-web.algonquindesign.ca/web-dev-3/fastness-fixer-tracking-script/tracker.js"></script>
 </body>
 </html>
